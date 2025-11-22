@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Section</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./assets/style.css">
+</head>
+
+<body>
+
+
+   <!-- ======= Header ======= -->
+   <header id="header" class="header-navbar d-flex align-items-center">
+    <div class="container-fluid d-flex align-items-center justify-content-between">
+        <a href="./index.html">
+            <img class="navbar-img mt-1" src="./assets/images/Finconne - Copy-1 (1) 1.png" alt="">
+        </a>
+
+        <nav id="navbar" class="navbar d-flex justify-content-center">
+            <ul class="list-unstyled d-block d-xl-flex align-items-center mb-0">
+                <li class="nav-item product-item">
+                    <a class="nav-link" href="#" role="button" id="productsLink" aria-expanded="false">
+                        Products
+                        <i class="bi bi-chevron-down"></i>
+                    </a>
+                </li>
+
+
+
+                <!-- Dropdown For Responsive Screens -->
+
+
+                <div class="product-scroll-wrapper d-xl-none">
+                    <div style="cursor: pointer;" class="product-item-drag-flex">
+                        <h6 class="my-4"><a href="#" style="border-color: #0066CC !important;"
+                                class="text-decoration-none text-black border border-1 rounded-pill px-3 py-1 active-link"
+                                id="financialLink">Financial Institution</a></h6>
+                    </div>
+                    <div style="cursor: pointer;" class="product-item-drag-flex">
+                        <h6 class="my-4"><a href="#" style="border-color: #0066CC !important;"
+                                class="text-decoration-none text-black border border-1 rounded-pill px-3 py-1"
+                                id="customerLink">Individual Customer</a></h6>
+                    </div>
+                </div>
+
+
+                <div class="col-12 about-product-hov-box-d-1-res show-box d-xl-none" style="overflow-x: hidden;">
+                    <div class="row">
+                        <div class="col-12">
+                            <a href="./career.html" class="text-decoration-none text-black product-dd-it">
+                                <div class="d-flex">
+                                    <i class="bi bi-ui-checks-grid fs-4 me-3 d-block position-relative"
+                                        style="top: 5px;"></i>
+                                    <div>
+                                        <h6>Finance</h6>
+                                        <small>Lorem ipsum dolor sit amet consectetur.</small>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12">
+                            <a href="./team.html" class="text-decoration-none text-black product-dd-it">
+                                <div class="d-flex">
+                                    <i class="bi bi-wallet fs-4 me-3 d-block position-relative"
+                                        style="top: 5px;"></i>
+                                    <div>
+                                        <h6>Saving</h6>
+                                        <small>Lorem ipsum dolor sit amet consectetur.</small>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12">
+                            <a href="./error.html" class="text-decoration-none text-black product-dd-it">
+                                <div class="d-flex">
+                                    <i class="bi bi-bar-chart fs-4 me-3 d-block position-relative"
+                                        style="top: 5px;"></i>
+                                    <div>
+                                        <h6>Investment - coming soon</h6>
+                                        <small>Lorem ipsum dolor sit amet consectetur.</small>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-12 about-product-hov-box-d-2-res d-xl-none" style="overflow-x: hidden;">
+                    <div class="row">
+                        <div class="col-12">
+                            <a href="./error.html" class="text-decoration-none text-black product-dd-it">
+                                <div class="d-flex">
+                                    <i class="bi bi-gear fs-4 me-3 d-block position-relative" style="top: 5px;"></i>
+                                    <div>
+                                        <h6>Automated Group Contribution</h6>
+                                        <small>Lorem ipsum dolor sit amet consectetur.</small>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12">
+                            <a href="./error.html" class="text-decoration-none text-black product-dd-it">
+                                <div class="d-flex">
+                                    <i class="bi bi-box-seam fs-4 me-3 d-block position-relative"
+                                        style="top: 5px;"></i>
+                                    <div>
+                                        <h6>Institution Service Offering</h6>
+                                        <small>Lorem ipsum dolor sit amet consectetur.</small>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <li class="navbar-item"><a class="text-decoration-none" href="./error.html">About</a></li>
+                <li class="navbar-item"><a href="./error.html" class="text-decoration-none">Contact</a></li>
+                <li class="navbar-item"><a class="text-decoration-none" href="./blog.html">Blog</a></li>
+
+                <li class="mx-3 d-xl-none">
+                    <div class="dropdown text-center">
+                        <button
+                            class="w-75 btn btn-secondary position-absolute nav-btn text-decoration-none mx-xl-0 py-2 px-3"
+                            type="button">
+                            Get Started
+                            <i class="bi bi-chevron-down"></i>
+                        </button>
+                        <ul class="dropdown-menu product-dropmenu-res position-absolute">
+                            <li><a class="dropdown-item d-block border-bottom border-secondary-subtle px-2 pb-2"
+                                    href="./register.html">Register</a></li>
+                            <li><a class="dropdown-item px-4 pb-2 pt-3" style="font-size: 15px;" href="./individual-register.html">As An
+                                    individual</a></li>
+                            <li><a class="dropdown-item px-4 pb-2" style="font-size: 15px;" href="./register.html">As An
+                                    institution</a></li>
+                            <div class="text-center">
+                                <button style="background-color: #0066CC !important;"
+                                    class="btn btn-primary w-50 m-auto rounded-pill"><a href="./signIn.html">Login</a></button>
+                            </div>
+                        </ul>
+                    </div>
+                </li>
+
+            </ul>
+        </nav>
+
+        <div class="mx-4 d-none d-xl-block">
+            <div class="dropdown-center dropdown">
+                <button class="btn btn-secondary nav-btn text-decoration-none mx-xl-0 py-2 px-3" type="button">
+                    Get Started
+                    <i class="bi bi-chevron-down"></i>
+                </button>
+                <ul class="dropdown-menu position-absolute" style="right: 22px;">
+                    <li><a class="dropdown-item d-block border-bottom border-secondary-subtle px-2 pb-2"
+                            href="./register.html">Register</a></li>
+                    <li><a class="dropdown-item px-4 pb-2 pt-3" style="font-size: 15px;" href="./individual-register.html">As An
+                            individual</a></li>
+                    <li><a class="dropdown-item px-4 pb-2" style="font-size: 15px;" href="./register.html">As An institution</a>
+                    </li>
+                    <div class="text-center">
+                        <button style="background-color: #0066CC !important;"
+                            class="btn btn-primary w-75 m-auto rounded-pill"><a href="./signIn.html">Login</a></button>
+                    </div>
+                </ul>
+            </div>
+        </div>
+
+
+        
+        <!-- replace -->
+
+        <div class="nav-list-button">
+            <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+        </div>
+        <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+    </div>
+
+    <!-- replace -->
+
+
+</header>
+<!-- End Header -->
+
+
+
+<!-- Products DropDown for Desktop/Larger Screen -->
+<div class="product-container dropdown-product position-fixed" style="z-index: 99999;">
+    <div class="row justify-content-center border border-1 bg-white position-relative rounded-4 p-4"
+        style="z-index: 999;">
+        <div class="col-6">
+            <div class="row">
+                <div class="col-12 mb-2">
+                    <a href="#" class="text-decoration-none text-black product-dd-it product-dd-it-1">
+                        <div class="p-2">
+                            <h5>Financial Institution</h5>
+                            <small>Lorem ipsum dolor sit amet consectetur.</small>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12 my-2">
+                    <a href="#" class="text-decoration-none text-black product-dd-it product-dd-it-2">
+                        <div class="p-2">
+                            <h5>Individual Customer</h5>
+                            <small>Lorem ipsum dolor sit amet consectetur.</small>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-6 about-product-hov-box-d-1 show-box">
+            <div class="row">
+                <div class="col-12 mb-2">
+                    <a href="./career.html" class="text-decoration-none text-black product-dd-it">
+                        <div class="d-flex p-2">
+                            <i class="bi bi-ui-checks-grid fs-4 me-3 d-block position-relative"
+                                style="top: 5px;"></i>
+                            <div>
+                                <h5>Finance</h5>
+                                <small>Lorem ipsum dolor sit amet consectetur.</small>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12 my-2">
+                    <a href="./team.html" class="text-decoration-none text-black product-dd-it">
+                        <div class="d-flex p-2">
+                            <i class="bi bi-wallet fs-4 me-3 d-block position-relative" style="top: 5px;"></i>
+                            <div>
+                                <h5>Saving</h5>
+                                <small>Lorem ipsum dolor sit amet consectetur.</small>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12 my-2">
+                    <a href="./error.html" class="text-decoration-none text-black product-dd-it">
+                        <div class="d-flex p-2">
+                            <i class="bi bi-bar-chart fs-4 me-3 d-block position-relative" style="top: 5px;"></i>
+                            <div>
+                                <h5>Investment - coming soon</h5>
+                                <small>Lorem ipsum dolor sit amet consectetur.</small>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-6 about-product-hov-box-d-2">
+            <div class="row">
+                <div class="col-12 mb-2">
+                    <a href="./error.html" class="text-decoration-none text-black product-dd-it">
+                        <div class="d-flex p-2">
+                            <i class="bi bi-gear fs-4 me-3 d-block position-relative" style="top: 5px;"></i>
+                            <div>
+                                <h5>Automated Group Contribution</h5>
+                                <small>Lorem ipsum dolor sit amet consectetur.</small>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12 my-2">
+                    <a href="./error.html" class="text-decoration-none text-black product-dd-it">
+                        <div class="d-flex p-2">
+                            <i class="bi bi-box-seam fs-4 me-3 d-block position-relative" style="top: 5px;"></i>
+                            <div>
+                                <h5>Institution Service Offering</h5>
+                                <small>Lorem ipsum dolor sit amet consectetur.</small>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-lg-4 px-4">
+                <div class="team-member-main">
+                    <div class="text-center">
+                        <h1 class="mb-5 display-3 fw-semibold">Team</h1>
+                    </div>
+                    <img class="img-fluid" src="./assets/images/Akinade Ayodeji Timothew.png"
+                        alt="Akinade Ayodeji Timothew">
+                    <h5>Akinade Ayodeji Timothew</h5>
+                    <p>Founder, Product Manager, Software Engineer</p>
+                    <h6>Ayodeji is the visionary behind FinConne, with a robust background in software engineering and
+                        product management. He spearheads the company’s strategic direction and product innovation,
+                        ensuring we consistently deliver cutting-edge financial solutions.</h6>
+                </div>
+            </div>
+            <div class="col-lg-8 px-4" style="border-left: 1px solid grey;">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="team-member">
+                            <img class="img-fluid" src="./assets/images/Ajayi ObaniJesu Toluwanimi.png"
+                                alt="Ajayi Obaniesu Toluwanmi">
+                            <h5>Ajayi Obaniesu Toluwanmi</h5>
+                            <p>Co-founder, Product Designer, Assistant Product Manager</p>
+                            <h6>Ajayi brings a unique blend of design and management skills, ensuring our products not
+                                only function seamlessly but also provide an engaging user experience.</h6>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="team-member">
+                            <img class="img-fluid" src="./assets/images/Joba Adewumi.jpg" alt="Adewunmi Joba">
+                            <h5>Adewunmi Joba</h5>
+                            <p>Chief Technology Officer, Software Engineer</p>
+                            <h6>Joba leads the technical team with a focus on developing scalable and robust software
+                                solutions. He ensures our platform is reliable and secure.</h6>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="team-member">
+                            <img src="./assets/images/Akinade Opeyemi.png" alt="Akinade Opeyemi">
+                            <h5>Akinade Opeyemi</h5>
+                            <p>Product Designer</p>
+                            <h6>Opeyemi is responsible for the overall user experience and visual design of our
+                                products. He ensures that our designs are both user-friendly and aesthetically pleasing.
+                            </h6>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="team-member">
+                            <img src="./assets/images/Akinsanya Adedoyin Zainab.jpg" alt="Akinsanya Adedoyin Zainab">
+                            <h5>Akinsanya Adedoyin Zainab</h5>
+                            <p>Brand Designer</p>
+                            <h6>Adedoyin creates the visual identity of our brand, making sure our branding is
+                                consistent across all channels and resonates with our target audience.</h6>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="team-member">
+                            <img src="./assets/images/Shobo Omotoyosi Elizabeth.jpg" alt="Shoob Omotoyosi Elizabeth">
+                            <h5>Shoob Omotoyosi Elizabeth</h5>
+                            <p>Social Media Manager</p>
+                            <h6>Omotoyosi manages our social media presence, engaging with our community and growing our
+                                audience across various platforms.</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="position-relative">
+        <div class="footer-box d-flex justify-content-center align-items-center text-white">
+            <img class="img-fluid position-absolute bottom-0 end-0 footer-eclipse-circle-positioned-sty"
+                src="./assets/images/Ellipse 4 (1).png" alt="">
+            <img class="img-fluid position-absolute bottom-0 start-0" src="./assets/images/Ellipse 4.png" alt="">
+            <div class="container">
+                <div class="row">
+                    <div class="text-center">
+                        <h1>Subscribe now!</h1>
+                        <p>Get the latest update</p>
+                        <div class="text-center d-flex justify-content-center align-items-center">
+                            <div class="col-8 col-lg-5">
+                                <div class="mx-2">
+                                    <input style="border-color: transparent;" type="text"
+                                        class="w-100 py-2 border-2 px-3 rounded-3"
+                                        placeholder="Enter your email address">
+                                </div>
+                            </div>
+                            <div class="col-4 col-lg-2">
+                                <button class="w-100 btn btn-primary border-0 px-0 px-lg-4 py-2"
+                                    style="background-color: #0066CC !important;">Subscribe</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="figure-box-wave">
+            <div>
+                <img class="w-100" src="./assets/images/Vector 125.png" alt="">
+            </div>
+        </div>
+
+        <div class="footer-wave-bottom-box-bg-color">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-4">
+                        <img class="footer-img my-2" src="./assets/images/Finconn 1.png" alt="">
+                        <div class="text-white">
+                            <h6>Lagos, Nigeria.</h6>
+                            <h6 class="text-black pt-4">Open Hours</h6>
+                            <h6>Mon - Sat: 8am - 5pm</h6>
+                            <h6>Sunday: Closed</h6>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-2">
+                        <h4 class="text-black">Links</h4>
+                        <ul class="list-unstyled">
+                            <li class="text-white fs-light my-2"><i class="bi bi-chevron-right pe-3"></i><a
+                                    class="text-white text-decoration-none" href="#">Home</a></li>
+                            <li class="text-white fs-light my-2"><i class="bi bi-chevron-right pe-3"></i><a
+                                    class="text-white text-decoration-none" href="#">FAQ</a></li>
+                            <li class="text-white fs-light my-2"><i class="bi bi-chevron-right pe-3"></i><a
+                                    class="text-white text-decoration-none" href="#">Gallery</a></li>
+                            <li class="text-white fs-light my-2"><i class="bi bi-chevron-right pe-3"></i><a
+                                    class="text-white text-decoration-none" href="#">Contact</a></li>
+                            <li class="text-white fs-light my-2"><i class="bi bi-chevron-right pe-3"></i><a
+                                    class="text-white text-decoration-none" href="#">Blogs</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-6 col-lg-2">
+                        <ul class="list-unstyled mt-4 pt-1 pt-lg-2">
+                            <li class="text-white fs-light my-2"><i class="bi bi-chevron-right pe-3"></i><a
+                                    class="text-white text-decoration-none" href="#">Team</a></li>
+                            <li class="text-white fs-light my-2"><i class="bi bi-chevron-right pe-3"></i><a
+                                    class="text-white text-decoration-none" href="#">Services</a></li>
+                            <li class="text-white fs-light my-2"><i class="bi bi-chevron-right pe-3"></i><a
+                                    class="text-white text-decoration-none" href="#">About us</a></li>
+                            <li class="text-white fs-light my-2"><i class="bi bi-chevron-right pe-3"></i><a
+                                    class="text-white text-decoration-none" href="#">Testimonials</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-lg-4">
+                        <h4 class="text-black">Newsletter</h4>
+                        <p class="text-white my-3">Send us a newsletter to get update</p>
+                        <input class="footer-input-box-sty my-2 py-2 px-3 border-1 w-75"
+                            style="border-color: transparent;" type="text" placeholder="Enter Your Email Address">
+                        <button class="footer-btn-sty py-2 px-3"><img src="./assets/images/Vector.png" alt=""></button>
+                        <div class="mt-3">
+                            <a href="#"><img src="./assets/images/logos_facebook.png" alt=""></a>
+                            <a href="#"><img class="ms-3" src="./assets/images/pajamas_twitter.png" alt=""></a>
+                            <a href="#"><img class="ms-3" src="./assets/images/skill-icons_instagram.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div style="background-color: #222222;" class="py-3 text-center">
+            <h6 class="text-white fw-normal">Copyright <span class="fw-bold" style="color: #0066CC;">Fin</span><span
+                    style="color: #0066CC;">CONNE</span> 2024 All Right Reserved</h6>
+        </div>
+
+    </footer>
+
+
+    <script src="./assets/script.js"></script>
+    <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/change.js"></script>
+
+</body>
+
+</html>

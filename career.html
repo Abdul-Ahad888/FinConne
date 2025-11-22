@@ -1,0 +1,868 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./assets/style.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+
+<body>
+
+    <div class="loader-container" id="loader">
+        <div class="loader"></div>
+    </div>
+
+<!-- ======= Header ======= -->
+<header id="header" class="header-navbar d-flex align-items-center">
+    <div class="container-fluid d-flex align-items-center justify-content-between">
+        <a href="./index.html">
+            <img class="navbar-img mt-1" src="./assets/images/Finconne - Copy-1 (1) 1.png" alt="">
+        </a>
+
+        <nav id="navbar" class="navbar d-flex justify-content-center">
+            <ul class="list-unstyled d-block d-xl-flex align-items-center mb-0">
+                <li class="nav-item product-item">
+                    <a class="nav-link" href="#" role="button" id="productsLink" aria-expanded="false">
+                        Products
+                        <i class="bi bi-chevron-down"></i>
+                    </a>
+                </li>
+
+
+
+                <!-- Dropdown For Responsive Screens -->
+
+
+                <div class="product-scroll-wrapper d-xl-none">
+                    <div style="cursor: pointer;" class="product-item-drag-flex">
+                        <h6 class="my-4"><a href="#" style="border-color: #0066CC !important;"
+                                class="text-decoration-none text-black border border-1 rounded-pill px-3 py-1 active-link"
+                                id="financialLink">Financial Institution</a></h6>
+                    </div>
+                    <div style="cursor: pointer;" class="product-item-drag-flex">
+                        <h6 class="my-4"><a href="#" style="border-color: #0066CC !important;"
+                                class="text-decoration-none text-black border border-1 rounded-pill px-3 py-1"
+                                id="customerLink">Individual Customer</a></h6>
+                    </div>
+                </div>
+
+
+                <div class="col-12 about-product-hov-box-d-1-res show-box d-xl-none" style="overflow-x: hidden;">
+                    <div class="row">
+                        <div class="col-12">
+                            <a href="./career.html" class="text-decoration-none text-black product-dd-it">
+                                <div class="d-flex">
+                                    <i class="bi bi-ui-checks-grid fs-4 me-3 d-block position-relative"
+                                        style="top: 5px;"></i>
+                                    <div>
+                                        <h6>Finance</h6>
+                                        <small>Lorem ipsum dolor sit amet consectetur.</small>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12">
+                            <a href="./team.html" class="text-decoration-none text-black product-dd-it">
+                                <div class="d-flex">
+                                    <i class="bi bi-wallet fs-4 me-3 d-block position-relative"
+                                        style="top: 5px;"></i>
+                                    <div>
+                                        <h6>Saving</h6>
+                                        <small>Lorem ipsum dolor sit amet consectetur.</small>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12">
+                            <a href="./error.html" class="text-decoration-none text-black product-dd-it">
+                                <div class="d-flex">
+                                    <i class="bi bi-bar-chart fs-4 me-3 d-block position-relative"
+                                        style="top: 5px;"></i>
+                                    <div>
+                                        <h6>Investment - coming soon</h6>
+                                        <small>Lorem ipsum dolor sit amet consectetur.</small>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-12 about-product-hov-box-d-2-res d-xl-none" style="overflow-x: hidden;">
+                    <div class="row">
+                        <div class="col-12">
+                            <a href="./error.html" class="text-decoration-none text-black product-dd-it">
+                                <div class="d-flex">
+                                    <i class="bi bi-gear fs-4 me-3 d-block position-relative" style="top: 5px;"></i>
+                                    <div>
+                                        <h6>Automated Group Contribution</h6>
+                                        <small>Lorem ipsum dolor sit amet consectetur.</small>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12">
+                            <a href="./error.html" class="text-decoration-none text-black product-dd-it">
+                                <div class="d-flex">
+                                    <i class="bi bi-box-seam fs-4 me-3 d-block position-relative"
+                                        style="top: 5px;"></i>
+                                    <div>
+                                        <h6>Institution Service Offering</h6>
+                                        <small>Lorem ipsum dolor sit amet consectetur.</small>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <li class="navbar-item"><a class="text-decoration-none" href="./error.html">About</a></li>
+                <li class="navbar-item"><a href="./error.html" class="text-decoration-none">Contact</a></li>
+                <li class="navbar-item"><a class="text-decoration-none" href="./blog.html">Blog</a></li>
+
+                <li class="mx-3 d-xl-none">
+                    <div class="dropdown text-center">
+                        <button
+                            class="w-75 btn btn-secondary position-absolute nav-btn text-decoration-none mx-xl-0 py-2 px-3"
+                            type="button">
+                            Get Started
+                            <i class="bi bi-chevron-down"></i>
+                        </button>
+                        <ul class="dropdown-menu product-dropmenu-res position-absolute">
+                            <li><a class="dropdown-item d-block border-bottom border-secondary-subtle px-2 pb-2"
+                                    href="./register.html">Register</a></li>
+                            <li><a class="dropdown-item px-4 pb-2 pt-3" style="font-size: 15px;" href="./individual-register.html">As An
+                                    individual</a></li>
+                            <li><a class="dropdown-item px-4 pb-2" style="font-size: 15px;" href="./register.html">As An
+                                    institution</a></li>
+                            <div class="text-center">
+                                <button style="background-color: #0066CC !important;"
+                                    class="btn btn-primary w-50 m-auto rounded-pill"><a href="./signIn.html">Login</a></button>
+                            </div>
+                        </ul>
+                    </div>
+                </li>
+
+            </ul>
+        </nav>
+
+        <div class="mx-4 d-none d-xl-block">
+            <div class="dropdown-center dropdown">
+                <button class="btn btn-secondary nav-btn text-decoration-none mx-xl-0 py-2 px-3" type="button">
+                    Get Started
+                    <i class="bi bi-chevron-down"></i>
+                </button>
+                <ul class="dropdown-menu position-absolute" style="right: 22px;">
+                    <li><a class="dropdown-item d-block border-bottom border-secondary-subtle px-2 pb-2"
+                            href="./register.html">Register</a></li>
+                    <li><a class="dropdown-item px-4 pb-2 pt-3" style="font-size: 15px;" href="./individual-register.html">As An
+                            individual</a></li>
+                    <li><a class="dropdown-item px-4 pb-2" style="font-size: 15px;" href="./register.html">As An institution</a>
+                    </li>
+                    <div class="text-center">
+                        <button style="background-color: #0066CC !important;"
+                            class="btn btn-primary w-75 m-auto rounded-pill"><a href="./signIn.html">Login</a></button>
+                    </div>
+                </ul>
+            </div>
+        </div>
+
+
+        
+        <!-- replace -->
+
+        <div class="nav-list-button">
+            <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+        </div>
+        <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+    </div>
+
+    <!-- replace -->
+
+
+</header>
+<!-- End Header -->
+
+
+
+<!-- Products DropDown for Desktop/Larger Screen -->
+<div class="product-container dropdown-product position-fixed" style="z-index: 99999;">
+    <div class="row justify-content-center border border-1 bg-white position-relative rounded-4 p-4"
+        style="z-index: 999;">
+        <div class="col-6">
+            <div class="row">
+                <div class="col-12 mb-2">
+                    <a href="#" class="text-decoration-none text-black product-dd-it product-dd-it-1">
+                        <div class="p-2">
+                            <h5>Financial Institution</h5>
+                            <small>Lorem ipsum dolor sit amet consectetur.</small>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12 my-2">
+                    <a href="#" class="text-decoration-none text-black product-dd-it product-dd-it-2">
+                        <div class="p-2">
+                            <h5>Individual Customer</h5>
+                            <small>Lorem ipsum dolor sit amet consectetur.</small>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-6 about-product-hov-box-d-1 show-box">
+            <div class="row">
+                <div class="col-12 mb-2">
+                    <a href="./career.html" class="text-decoration-none text-black product-dd-it">
+                        <div class="d-flex p-2">
+                            <i class="bi bi-ui-checks-grid fs-4 me-3 d-block position-relative"
+                                style="top: 5px;"></i>
+                            <div>
+                                <h5>Finance</h5>
+                                <small>Lorem ipsum dolor sit amet consectetur.</small>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12 my-2">
+                    <a href="./team.html" class="text-decoration-none text-black product-dd-it">
+                        <div class="d-flex p-2">
+                            <i class="bi bi-wallet fs-4 me-3 d-block position-relative" style="top: 5px;"></i>
+                            <div>
+                                <h5>Saving</h5>
+                                <small>Lorem ipsum dolor sit amet consectetur.</small>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12 my-2">
+                    <a href="./error.html" class="text-decoration-none text-black product-dd-it">
+                        <div class="d-flex p-2">
+                            <i class="bi bi-bar-chart fs-4 me-3 d-block position-relative" style="top: 5px;"></i>
+                            <div>
+                                <h5>Investment - coming soon</h5>
+                                <small>Lorem ipsum dolor sit amet consectetur.</small>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-6 about-product-hov-box-d-2">
+            <div class="row">
+                <div class="col-12 mb-2">
+                    <a href="./error.html" class="text-decoration-none text-black product-dd-it">
+                        <div class="d-flex p-2">
+                            <i class="bi bi-gear fs-4 me-3 d-block position-relative" style="top: 5px;"></i>
+                            <div>
+                                <h5>Automated Group Contribution</h5>
+                                <small>Lorem ipsum dolor sit amet consectetur.</small>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12 my-2">
+                    <a href="./error.html" class="text-decoration-none text-black product-dd-it">
+                        <div class="d-flex p-2">
+                            <i class="bi bi-box-seam fs-4 me-3 d-block position-relative" style="top: 5px;"></i>
+                            <div>
+                                <h5>Institution Service Offering</h5>
+                                <small>Lorem ipsum dolor sit amet consectetur.</small>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+    <section class="sec-1-career">
+        <div class="container">
+            <div class="row justify-content-center align-content-center scroll">
+                <div class="text-center text-white">
+                    <h2>JOIN US</h2>
+                    <p>Come join a team that's redefining the financial <br> experience for millions of people in
+                        emerging markets.</p>
+                    <button class="px-5 py-3 rounded-4 text-white border-0 btn-cus-sty">Join the
+                        team</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sec-2-career my-5">
+        <div class="container">
+            <div class="row">
+                <div class="scroll">
+                    <h5>BENEFITS</h5>
+                    <div class="col-12 col-lg-4">
+                        <h2 class="fw-bold">Why you Should Join Our Awesome Team</h2>
+                        <p>we want to feel like home when you are working at <span class="fw-bold">Fin</span>CONNE & for
+                            that we have curated a great set of benefits for you.</p>
+                        </div>
+                    </div>
+
+
+                <div class="col-12 col-lg-8">
+                    <div class="row">
+                        <div class="col-12 col-lg-6 scroll">
+                            <img class="img-fluid" src="./assets/images/Frame 512309.png" alt="">
+                            <h5 class="fw-bold my-2">Team work</h5>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has been the industry.</p>
+                        </div>
+                        <div class="col-12 col-lg-6 scroll">
+                            <img class="img-fluid" src="./assets/images/Frame 512310.png" alt="">
+                            <h5 class="fw-bold my-2">Secured Future</h5>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has been the industry.</p>
+                        </div>
+                        <div class="col-12 col-lg-6 mt-4 scroll">
+                            <img class="img-fluid" src="./assets/images/Frame 512307.png" alt="">
+                            <h5 class="fw-bold my-2">Learning Opportunity</h5>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has been the industry.</p>
+                        </div>
+                        <div class="col-12 col-lg-6 mt-4 scroll">
+                            <img class="img-fluid" src="./assets/images/Frame 512308.png" alt="">
+                            <h5 class="fw-bold my-2">Upgrate Skills</h5>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has been the industry.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-5">
+                <div class="text-center scroll">
+                    <h5>COME JOIN US</h5>
+                    <h2 class="fw-bold">Career Openings</h2>
+                    <p>We’re always looking for creative, talented self-starters to join the <br><span
+                            class="fw-bold">Fin</span>CONNE family. Check out our open roles below and fill out an
+                        application.</p>
+                </div>
+
+                <div class="row d-flex d-lg-none scroll">
+                    <div class="scroll-wrapper">
+                        <div style="cursor: pointer;" class="item active-box-links-color" onclick="showCategory('hr-admin')">
+                            <h6 id="hr-admin-link" style="color: #0066CC;" class="my-4">HR & ADMIN</h6>
+                        </div>
+                        <div style="cursor: pointer;" class="item active-box-links-color" onclick="showCategory('engineer')">
+                            <h6 id="engineer-link" class="my-4">ENGINEER (5)</h6>
+                        </div>
+                        <div style="cursor: pointer;" class="item active-box-links-color" onclick="showCategory('support')">
+                            <h6 id="support-link" class="my-4">SUPPORT</h6>
+                        </div>
+                        <div style="cursor: pointer;" class="item active-box-links-color" onclick="showCategory('design')">
+                            <h6 id="design-link" class="my-4">DESIGN</h6>
+                        </div>
+                        <div style="cursor: pointer;" class="item active-box-links-color"
+                            onclick="showCategory('digital-marketing')">
+                            <h6 id="digital-marketing-link" class="my-4">DIGITAL MARKETING</h6>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-4 mt-4 d-none d-lg-block scroll">
+                    <div class="text-start">
+                        <div style="cursor: pointer;" class="active-box-links-color" onclick="showCategory('hr-admin')">
+                            <h6 id="hr-admin-link" style="color: #0066CC;" class="my-4">HR & ADMIN</h6>
+                        </div>
+                        <div style="cursor: pointer;" class="active-box-links-color" onclick="showCategory('engineer')">
+                            <h6 id="engineer-link" class="my-4">ENGINEER (5)</h6>
+                        </div>
+                        <div style="cursor: pointer;" class="active-box-links-color" onclick="showCategory('support')">
+                            <h6 id="support-link" class="my-4">SUPPORT</h6>
+                        </div>
+                        <div style="cursor: pointer;" class="active-box-links-color" onclick="showCategory('design')">
+                            <h6 id="design-link" class="my-4">DESIGN</h6>
+                        </div>
+                        <div style="cursor: pointer;" class="active-box-links-color"
+                            onclick="showCategory('digital-marketing')">
+                            <h6 id="digital-marketing-link" class="my-4">DIGITAL MARKETING</h6>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-8 mt-4">
+
+                    <!-- HR & ADMIN Category -->
+                    <div id="hr-admin" class="career-category fade">
+
+                        <a href="./single-career.html" class="text-black text-decoration-none">
+                            <div class="clk-shade-box-sty py-3 mb-4 mx-2 row">
+                                <div class="col-12 col-lg-6">
+                                    <h4 class="mt-3 pt-1 px-lg-3 fw-bold">HR Manager</h4>
+                                </div>
+                                <div class="col-4 col-lg-2">
+                                    <small class="text-body-tertiary fs-6 fw-semibold">Experience</small>
+                                    <h4 class="mt-2 fw-bold">3 Years</h4>
+                                </div>
+                                <div class="col-6 col-lg-3">
+                                    <small class="text-body-tertiary fs-6 fw-semibold">Deadline</small>
+                                    <h4 class="mt-2 fw-bold">2023-12-31</h4>
+                                </div>
+                                <div class="col-2 col-lg-1">
+                                    <div class="px-4 float-end mt-0 mt-lg-4">
+                                        <i class="bi bi-arrow-right fs-5"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="./single-career.html" class="text-black text-decoration-none">
+                            <div class="clk-shade-box-sty py-3 mx-2 mb-4 row">
+                                <div class="col-12 col-lg-6">
+                                    <h4 class="mt-3 pt-1 px-0 px-lg-3 fw-bold">HR Manager</h4>
+                                </div>
+                                <div class="col-4 col-lg-2">
+                                    <small class="text-body-tertiary fs-6 fw-semibold">Experience</small>
+                                    <h4 class="mt-2 fw-bold">3 Years</h4>
+                                </div>
+                                <div class="col-6 col-lg-3">
+                                    <small class="text-body-tertiary fs-6 fw-semibold">Deadline</small>
+                                    <h4 class="mt-2 fw-bold">2023-12-31</h4>
+                                </div>
+                                <div class="col-2 col-lg-1">
+                                    <div class="px-4 float-end mt-0 mt-lg-4">
+                                        <i class="bi bi-arrow-right fs-5"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="./single-career.html" class="text-black text-decoration-none">
+                            <div class="clk-shade-box-sty py-3 mx-2 mb-4 row">
+                                <div class="col-12 col-lg-6">
+                                    <h4 class="mt-3 pt-1 px-0 px-lg-3 fw-bold">HR Manager</h4>
+                                </div>
+                                <div class="col-4 col-lg-2">
+                                    <small class="text-body-tertiary fs-6 fw-semibold">Experience</small>
+                                    <h4 class="mt-2 fw-bold">3 Years</h4>
+                                </div>
+                                <div class="col-6 col-lg-3">
+                                    <small class="text-body-tertiary fs-6 fw-semibold">Deadline</small>
+                                    <h4 class="mt-2 fw-bold">2023-12-31</h4>
+                                </div>
+                                <div class="col-2 col-lg-1">
+                                    <div class="px-4 float-end mt-0 mt-lg-4">
+                                        <i class="bi bi-arrow-right fs-5"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+
+                    <!-- ENGINEER Category -->
+                    <div id="engineer" class="career-category fade" style="display: none;">
+
+                        <a href="./single-career.html" class="text-black text-decoration-none">
+                            <div class="clk-shade-box-sty py-3 mb-4 mx-2 row">
+                                <div class="col-12 col-lg-6">
+                                    <h4 class="mt-3 pt-1 px-0 px-lg-3 fw-bold">Wordpress Developer</h4>
+                                </div>
+                                <div class="col-4 col-lg-2">
+                                    <small class="text-body-tertiary fs-6 fw-semibold">Experience</small>
+                                    <h4 class="mt-2 fw-bold">2 Years</h4>
+                                </div>
+                                <div class="col-6 col-lg-3">
+                                    <small class="text-body-tertiary fs-6 fw-semibold">Deadline</small>
+                                    <h4 class="mt-2 fw-bold">2021-05-08</h4>
+                                </div>
+                                <div class="col-2 col-lg-1">
+                                    <div class="px-4 float-end mt-0 mt-lg-4">
+                                        <i class="bi bi-arrow-right fs-5"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="./single-career.html" class="text-black text-decoration-none">
+                            <div class="clk-shade-box-sty py-3 mb-4 mx-2 row">
+                                <div class="col-12 col-lg-6">
+                                    <h4 class="mt-3 pt-1 px-0 px-lg-3 fw-bold">Wordpress Developer</h4>
+                                </div>
+                                <div class="col-4 col-lg-2">
+                                    <small class="text-body-tertiary fs-6 fw-semibold">Experience</small>
+                                    <h4 class="mt-2 fw-bold">2 Years</h4>
+                                </div>
+                                <div class="col-6 col-lg-3">
+                                    <small class="text-body-tertiary fs-6 fw-semibold">Deadline</small>
+                                    <h4 class="mt-2 fw-bold">2021-05-08</h4>
+                                </div>
+                                <div class="col-2 col-lg-1">
+                                    <div class="px-4 float-end mt-0 mt-lg-4">
+                                        <i class="bi bi-arrow-right fs-5"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="./single-career.html" class="text-black text-decoration-none">
+                            <div class="clk-shade-box-sty py-3 mb-4 mx-2 row">
+                                <div class="col-12 col-lg-6">
+                                    <h4 class="mt-3 pt-1 px-0 px-lg-3 fw-bold">Wordpress Developer</h4>
+                                </div>
+                                <div class="col-4 col-lg-2">
+                                    <small class="text-body-tertiary fs-6 fw-semibold">Experience</small>
+                                    <h4 class="mt-2 fw-bold">2 Years</h4>
+                                </div>
+                                <div class="col-6 col-lg-3">
+                                    <small class="text-body-tertiary fs-6 fw-semibold">Deadline</small>
+                                    <h4 class="mt-2 fw-bold">2021-05-08</h4>
+                                </div>
+                                <div class="col-2 col-lg-1">
+                                    <div class="px-4 float-end mt-0 mt-lg-4">
+                                        <i class="bi bi-arrow-right fs-5"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+
+                    <!-- SUPPORT Category -->
+                    <div id="support" class="career-category fade" style="display: none;">
+
+                        <a href="./single-career.html" class="text-black text-decoration-none">
+                            <div class="clk-shade-box-sty py-3 mx-2 mb-4 row">
+                                <div class="col-12 col-lg-6">
+                                    <h4 class="mt-3 pt-1 px-0 px-lg-3 fw-bold">Customer Support Specialist</h4>
+                                </div>
+                                <div class="col-4 col-lg-2">
+                                    <small class="text-body-tertiary fs-6 fw-semibold">Experience</small>
+                                    <h4 class="mt-2 fw-bold">1 Year</h4>
+                                </div>
+                                <div class="col-6 col-lg-3">
+                                    <small class="text-body-tertiary fs-6 fw-semibold">Deadline</small>
+                                    <h4 class="mt-2 fw-bold">2024-01-15</h4>
+                                </div>
+                                <div class="col-2 col-lg-1">
+                                    <div class="px-4 float-end mt-0 mt-lg-4">
+                                        <i class="bi bi-arrow-right fs-5"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="./single-career.html" class="text-black text-decoration-none">
+                            <div class="clk-shade-box-sty py-3 mx-2 mb-4 row">
+                                <div class="col-12 col-lg-6">
+                                    <h4 class="mt-3 pt-1 px-0 px-lg-3 fw-bold">Customer Support Specialist</h4>
+                                </div>
+                                <div class="col-4 col-lg-2">
+                                    <small class="text-body-tertiary fs-6 fw-semibold">Experience</small>
+                                    <h4 class="mt-2 fw-bold">1 Year</h4>
+                                </div>
+                                <div class="col-6 col-lg-3">
+                                    <small class="text-body-tertiary fs-6 fw-semibold">Deadline</small>
+                                    <h4 class="mt-2 fw-bold">2024-01-15</h4>
+                                </div>
+                                <div class="col-2 col-lg-1">
+                                    <div class="px-4 float-end mt-0 mt-lg-4">
+                                        <i class="bi bi-arrow-right fs-5"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="./single-career.html" class="text-black text-decoration-none">
+                            <div class="clk-shade-box-sty mx-2 py-3 mb-4 row">
+                                <div class="col-12 col-lg-6">
+                                    <h4 class="mt-3 pt-1 px-0 px-lg-3 fw-bold">Customer Support Specialist</h4>
+                                </div>
+                                <div class="col-4 col-lg-2">
+                                    <small class="text-body-tertiary fs-6 fw-semibold">Experience</small>
+                                    <h4 class="mt-2 fw-bold">1 Year</h4>
+                                </div>
+                                <div class="col-6 col-lg-3">
+                                    <small class="text-body-tertiary fs-6 fw-semibold">Deadline</small>
+                                    <h4 class="mt-2 fw-bold">2024-01-15</h4>
+                                </div>
+                                <div class="col-2 col-lg-1">
+                                    <div class="px-4 float-end mt-0 mt-lg-4">
+                                        <i class="bi bi-arrow-right fs-5"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+
+                    <!-- DESIGN Category -->
+                    <div id="design" class="career-category fade" style="display: none;">
+                        <a href="./single-career.html" class="text-black text-decoration-none">
+                            <div class="clk-shade-box-sty mx-2 py-3 mb-4 row">
+                                <div class="col-12 col-lg-6">
+                                    <h4 class="mt-3 pt-1 px-0 px-lg-3 fw-bold">Graphic Designer</h4>
+                                </div>
+                                <div class="col-4 col-lg-2">
+                                    <small class="text-body-tertiary fs-6 fw-semibold">Experience</small>
+                                    <h4 class="mt-2 fw-bold">1 Year</h4>
+                                </div>
+                                <div class="col-6 col-lg-3">
+                                    <small class="text-body-tertiary fs-6 fw-semibold">Deadline</small>
+                                    <h4 class="mt-2 fw-bold">2024-02-01</h4>
+                                </div>
+                                <div class="col-2 col-lg-1">
+                                    <div class="px-4 float-end mt-0 mt-lg-4">
+                                        <i class="bi bi-arrow-right fs-5"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="./single-career.html" class="text-black text-decoration-none">
+                            <div class="clk-shade-box-sty mx-2 py-3 mb-4 row">
+                                <div class="col-12 col-lg-6">
+                                    <h4 class="mt-3 pt-1 px-0 px-lg-3 fw-bold">Graphic Designer</h4>
+                                </div>
+                                <div class="col-4 col-lg-2">
+                                    <small class="text-body-tertiary fs-6 fw-semibold">Experience</small>
+                                    <h4 class="mt-2 fw-bold">1 Year</h4>
+                                </div>
+                                <div class="col-6 col-lg-3">
+                                    <small class="text-body-tertiary fs-6 fw-semibold">Deadline</small>
+                                    <h4 class="mt-2 fw-bold">2024-02-01</h4>
+                                </div>
+                                <div class="col-2 col-lg-1">
+                                    <div class="px-4 float-end mt-0 mt-lg-4">
+                                        <i class="bi bi-arrow-right fs-5"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="./single-career.html" class="text-black text-decoration-none">
+                            <div class="clk-shade-box-sty mx-2 py-3 mb-4 row">
+                                <div class="col-12 col-lg-6">
+                                    <h4 class="mt-3 pt-1 px-0 px-lg-3 fw-bold">Graphic Designer</h4>
+                                </div>
+                                <div class="col-4 col-lg-2">
+                                    <small class="text-body-tertiary fs-6 fw-semibold">Experience</small>
+                                    <h4 class="mt-2 fw-bold">1 Year</h4>
+                                </div>
+                                <div class="col-6 col-lg-3">
+                                    <small class="text-body-tertiary fs-6 fw-semibold">Deadline</small>
+                                    <h4 class="mt-2 fw-bold">2024-02-01</h4>
+                                </div>
+                                <div class="col-2 col-lg-1">
+                                    <div class="px-4 float-end mt-0 mt-lg-4">
+                                        <i class="bi bi-arrow-right fs-5"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+
+                    <!-- DIGITAL MARKETING Category -->
+                    <div id="digital-marketing" class="career-category fade" style="display: none;">
+
+                        <a href="./single-career.html" class="text-black text-decoration-none">
+                            <div class="clk-shade-box-sty mx-2 py-3 mb-4 row">
+                                <div class="col-12 col-lg-6">
+                                    <h4 class="mt-3 pt-1 px-0 px-lg-3 fw-bold">Digital Marketing Specialist</h4>
+                                </div>
+                                <div class="col-4 col-lg-2">
+                                    <small class="text-body-tertiary fs-6 fw-semibold">Experience</small>
+                                    <h4 class="mt-2 fw-bold">2 Years</h4>
+                                </div>
+                                <div class="col-6 col-lg-3">
+                                    <small class="text-body-tertiary fs-6 fw-semibold">Deadline</small>
+                                    <h4 class="mt-2 fw-bold">2024-03-01</h4>
+                                </div>
+                                <div class="col-2 col-lg-1">
+                                    <div class="px-4 float-end mt-0 mt-lg-4">
+                                        <i class="bi bi-arrow-right fs-5"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="./single-career.html" class="text-black text-decoration-none">
+                            <div class="clk-shade-box-sty mx-2 py-3 mb-4 row">
+                                <div class="col-12 col-lg-6">
+                                    <h4 class="mt-3 pt-1 px-0 px-lg-3 fw-bold">Digital Marketing Specialist</h4>
+                                </div>
+                                <div class="col-4 col-lg-2">
+                                    <small class="text-body-tertiary fs-6 fw-semibold">Experience</small>
+                                    <h4 class="mt-2 fw-bold">2 Years</h4>
+                                </div>
+                                <div class="col-6 col-lg-3">
+                                    <small class="text-body-tertiary fs-6 fw-semibold">Deadline</small>
+                                    <h4 class="mt-2 fw-bold">2024-03-01</h4>
+                                </div>
+                                <div class="col-2 col-lg-1">
+                                    <div class="px-4 float-end mt-0 mt-lg-4">
+                                        <i class="bi bi-arrow-right fs-5"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="./single-career.html" class="text-black text-decoration-none">
+                            <div class="clk-shade-box-sty mx-2 py-3 mb-4 row">
+                                <div class="col-12 col-lg-6">
+                                    <h4 class="mt-3 pt-1 px-0 px-lg-3 fw-bold">Digital Marketing Specialist</h4>
+                                </div>
+                                <div class="col-4 col-lg-2">
+                                    <small class="text-body-tertiary fs-6 fw-semibold">Experience</small>
+                                    <h4 class="mt-2 fw-bold">2 Years</h4>
+                                </div>
+                                <div class="col-6 col-lg-3">
+                                    <small class="text-body-tertiary fs-6 fw-semibold">Deadline</small>
+                                    <h4 class="mt-2 fw-bold">2024-03-01</h4>
+                                </div>
+                                <div class="col-2 col-lg-1">
+                                    <div class="px-4 float-end mt-0 mt-lg-4">
+                                        <i class="bi bi-arrow-right fs-5"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="float-end mb-4 scroll">
+                <nav aria-label="Page navigation example">
+                    <ul class="pagination">
+                        <li class="page-item fw-semibold"><a class="page-link" href="#">Previous</a></li>
+                        <li class="page-item fw-semibold"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item fw-semibold"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item fw-semibold"><a class="page-link" href="#">Next</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <footer class="position-relative">
+        <div class="footer-box d-flex justify-content-center align-items-center text-white">
+            <img class="img-fluid position-absolute bottom-0 end-0 footer-eclipse-circle-positioned-sty"
+                src="./assets/images/Ellipse 4 (1).png" alt="">
+            <img class="img-fluid position-absolute bottom-0 start-0" src="./assets/images/Ellipse 4.png" alt="">
+            <div class="container">
+                <div class="row">
+                    <div class="text-center">
+                        <h1>Subscribe now!</h1>
+                        <p>Get the latest update</p>
+                        <div class="text-center d-flex justify-content-center align-items-center">
+                            <div class="col-8 col-lg-5">
+                                <div class="mx-2 z-1 position-relative">
+                                    <input style="border-color: transparent;" type="text"
+                                        class="w-100 py-2 border-2 px-3 rounded-3"
+                                        placeholder="Enter your email address">
+                                </div>
+                            </div>
+                            <div class="col-4 col-lg-2">
+                                <button
+                                    class="w-100 btn btn-primary border-0 px-0 px-lg-4 py-2 btn-cus-sty z-1 position-relative">Subscribe</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="figure-box-wave">
+            <div>
+                <img class="w-100" src="./assets/images/Vector 125.png" alt="">
+            </div>
+        </div>
+
+        <div class="footer-wave-bottom-box-bg-color">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-4">
+                        <img class="footer-img my-2 p-0 m-0" src="./assets/images/Finconn 1.png" alt="">
+                        <div class="text-white">
+                            <h6>Lagos, Nigeria.</h6>
+                            <h6 class="text-white pt-4">Open Hours</h6>
+                            <h6>Mon - Sat: 8am - 5pm</h6>
+                            <h6>Sunday: Closed</h6>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-2">
+                        <h4 class="text-white">Links</h4>
+                        <ul class="list-unstyled">
+                            <li class="text-white fs-light my-2"><i class="bi bi-chevron-right pe-3"></i><a
+                                    class="text-white text-decoration-none" href="#">Home</a></li>
+                            <li class="text-white fs-light my-2"><i class="bi bi-chevron-right pe-3"></i><a
+                                    class="text-white text-decoration-none" href="#">FAQ</a></li>
+                            <li class="text-white fs-light my-2"><i class="bi bi-chevron-right pe-3"></i><a
+                                    class="text-white text-decoration-none" href="#">Gallery</a></li>
+                            <li class="text-white fs-light my-2"><i class="bi bi-chevron-right pe-3"></i><a
+                                    class="text-white text-decoration-none" href="#">Contact</a></li>
+                            <li class="text-white fs-light my-2"><i class="bi bi-chevron-right pe-3"></i><a
+                                    class="text-white text-decoration-none" href="#">Blogs</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-6 col-lg-2">
+                        <ul class="list-unstyled mt-4 pt-1 pt-lg-2">
+                            <li class="text-white fs-light my-2"><i class="bi bi-chevron-right pe-3"></i><a
+                                    class="text-white text-decoration-none" href="#">Team</a></li>
+                            <li class="text-white fs-light my-2"><i class="bi bi-chevron-right pe-3"></i><a
+                                    class="text-white text-decoration-none" href="#">Services</a></li>
+                            <li class="text-white fs-light my-2"><i class="bi bi-chevron-right pe-3"></i><a
+                                    class="text-white text-decoration-none" href="#">About us</a></li>
+                            <li class="text-white fs-light my-2"><i class="bi bi-chevron-right pe-3"></i><a
+                                    class="text-white text-decoration-none" href="#">Testimonials</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-lg-4">
+                        <h4 class="text-white">Newsletter</h4>
+                        <p class="text-white my-3">Send us a newsletter to get update</p>
+                        <input class="footer-input-box-sty my-2 py-2 px-3 border-1 w-75"
+                            style="border-color: transparent;" type="text" placeholder="Enter Your Email Address">
+                        <button class="footer-btn-sty"><img src="./assets/images/Vector.png" alt=""></button>
+                        <div class="mt-3">
+                            <a href="#"><img class="ms-2" src="./assets/images/logos_facebook.png" alt=""></a>
+                            <a href="#"><img class="ms-3" src="./assets/images/pajamas_twitter.png" alt=""></a>
+                            <a href="#"><img class="ms-3" src="./assets/images/skill-icons_instagram.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div style="background-color: #222222;" class="py-3 text-center">
+            <h6 class="text-white fw-normal">Copyright <span class="fw-bold" style="color: #0066CC;">Fin</span><span
+                    style="color: #0066CC;">CONNE</span> 2024 All Right Reserved</h6>
+        </div>
+
+    </footer>
+
+
+    <button onclick="topFunction()" id="backToTopBtn" title="Go to top"><i class="bi bi-chevron-up"></i></button>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/ScrollTrigger.min.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+    <script src="path/to/scrollreveal.min.js"></script>
+    <script src="./assets/change.js"></script> 
+    <script src="./assets/script.js"></script>
+</body>
+
+</html>

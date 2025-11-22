@@ -1,0 +1,145 @@
+.nav-list-button {
+    display: none !important;
+    align-items: center;
+}
+
+
+@media screen and (max-width:1280px) {
+    .nav-list-button {
+        display: flex !important;
+    }
+
+}
+
+
+
+/* For IPAD MINI */
+
+@media screen and (min-width:767px) and (min-height:1000px) {
+
+    .sec-2-land {
+        background-color: #CCE6FF90;
+        padding: 0px !important;
+        height: 60vh !important;
+    }
+
+    .sec-2-land>div>div {
+        padding: 0px !important;
+        margin: 0px !important;
+        height: 60vh !important;
+    }
+
+    .sec-1-land {
+        height: 45vh !important;
+        margin-top: 0px !important;
+    }
+
+}
+
+
+/* For IPAD AIR */
+
+@media screen and (min-width:800px) and (min-height:1100px) {
+
+    .sec-2-land {
+        background-color: #CCE6FF90;
+        padding: 0px !important;
+        height: 50vh !important;
+    }
+
+    .sec-2-land>div>div {
+        padding: 0px !important;
+        margin: 0px !important;
+        height: 53vh !important;
+    }
+
+    .sec-1-land {
+        height: 38vh !important;
+        margin-top: 0px !important;
+    }
+
+    .sec-1-land>div>div {
+        height: 60vh !important;
+    }
+
+}
+
+
+/* For IPAD PRO */
+
+@media screen and (min-width:1000px) and (min-height:1300px) {
+
+    .sec-2-land {
+        background-color: #CCE6FF90;
+        padding: 0px !important;
+        height: 20vh !important;
+    }
+
+    .sec-2-land>div>div {
+        padding: 0px !important;
+        margin: 0px !important;
+        height: 23vh !important;
+    }
+
+    .sec-1-land {
+        height: 45vh !important;
+        margin-top: 0px !important;
+    }
+
+    .sec-1-land>div>div {
+        height: 50vh !important;
+    }
+
+}
+
+
+
+@media screen and (max-width:990px) and (max-height:990px) {
+
+    .sec-1-land {
+        height: 45vh !important;
+        margin-top: 0px !important;
+    }
+
+}
+
+
+
+
+
+
+
+/* Remove This Code */
+
+/* @media screen and (min-width:1280px) and (max-height:1200px) {
+    .sec-1-land {
+        height: 60vh !important;
+    }
+
+    .sec-1-land>div>div {
+        height: 55vh !important;
+    }
+
+    .sec-2-land {
+        background-color: #CCE6FF90;
+        padding: 0px !important;
+        height: 20vh !important;
+    }
+
+    .sec-2-land>div>div {
+        padding: 0px !important;
+        margin: 0px !important;
+        height: 23vh !important;
+    }
+
+} */
+
+/* Remove This Code */
+
+
+
+
+
+
+
+
